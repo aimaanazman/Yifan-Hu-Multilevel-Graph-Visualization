@@ -1,0 +1,15 @@
+import numpy as np
+
+class QuadTree:
+    def __init__(self, pos):
+        self.points = pos
+
+    def barnes_hut_force(self, node, position, theta, K):
+        force = np.zeros(2)
+        for v, p in self.points.items():
+            if v == node:
+                continue
+            delta = position - p
+            dist = np.linalg.norm(delta) + 1e-9
+            force += (K**2 / dist) * (delta / dist)
+        return force
