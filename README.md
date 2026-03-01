@@ -1,2 +1,9 @@
-# yifan-hu-multilevel
-yifan-hu-multilevel
+# Yifan Hu Multilevel Graph Visualization
+
+This repository accompanies the manuscript:
+
+"Optimizing Large-Scale Graph Visualization: A Multilevel Approach Based on the Yifan Hu Algorithm"
+
+Submitted to The Visual Computer (Springer Nature).
+
+If you use this code in your research, please cite the corresponding manuscript.
